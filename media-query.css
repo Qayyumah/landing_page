@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: blue;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-menu{
+    display: none;
+}
+.left-menu{
+    display: none;
+}
+
+@media (min-width:700px){
+    nav{
+        background-color: red;
+    }
+    .right-menu{
+        display: flex;
+    }
+    .left-menu{
+        display: flex;
+    }
+    section h1{
+        display: none;
+    }
+}
